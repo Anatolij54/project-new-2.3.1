@@ -1,29 +1,27 @@
 package Dao;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 import model.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-@Transactional(readOnly = true)
+@Transactional
 public class UserDao {
 
     @PersistenceContext(unitName = "entityManager")
     private EntityManager entityManager;
 
+
     public List<User> getUser(){
-//        TypedQuery<User> getUser = entityManager.createQuery("SELECT us FROM User us", User.class);
-//        return getUser.getResultList();
-        return new ArrayList<>();
+        TypedQuery<User> getUser = entityManager.createQuery("SELECT us FROM User us", User.class);
+        return getUser.getResultList();
+
     }
 
     public User getUserId(int id){

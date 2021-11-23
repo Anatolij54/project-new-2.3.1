@@ -1,5 +1,5 @@
 {
-  "incremental": true,
+  "incremental": false,
   "verbose": false,
   "disable-cache": false,
   "debug-log": ".PVS-Studio/logs",
