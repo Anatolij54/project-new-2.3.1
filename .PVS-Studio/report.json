@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "warnings": [
+    {
+      "code": "Renew",
+      "cwe": 0,
+      "level": 1,
+      "positions": [],
+      "message": "Your license will expire in 7 days. Click \u0027Renew\u0027 to learn more or contact us at support@viva64.com.",
+      "projects": [],
+      "favorite": false,
+      "falseAlarm": false
+    },
+    {
+      "code": "V061",
+      "cwe": 0,
+      "level": 0,
+      "positions": [],
+      "message": "unable to parse json.",
+      "stacktrace": [
+        "com.pvsstudio.projects.JsonEvaluator.evaluate(JsonEvaluator.java:37)",
+        "com.pvsstudio.Main.getProject(Main.java:145)",
+        "com.pvsstudio.Main.main(Main.java:505)",
+        "caused by java.io.FileNotFoundException: C:\\Users\\79513\\IdeaProjects\\project-new-2.3\\.PVS-Studio\\project.json (Не удается найти указанный файл)",
+        "com.pvsstudio.projects.JsonEvaluator.evaluate(JsonEvaluator.java:37)",
+        "com.pvsstudio.Main.getProject(Main.java:145)",
+        "com.pvsstudio.Main.main(Main.java:505)"
+      ],
+      "projects": [],
+      "favorite": false,
+      "falseAlarm": false
+    }
+  ]
+}
